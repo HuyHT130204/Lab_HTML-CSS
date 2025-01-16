@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild Rescues - About Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>&#128062; Wild Rescues</h1>
+        <h3>Rescue. Rehabilitate. Release.</h3>
+        <nav>
+            <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>Wild Rescues is a member of the National Wildlife Rehabilitation Association. We help many animals, such as raccoons, squirrels, and birds.</p>
+    </main>
+    <footer>
+        <p>&copy; 2023 Wild Rescues. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
