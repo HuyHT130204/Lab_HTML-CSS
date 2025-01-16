@@ -1,0 +1,226 @@
+/* CSS Reset */
+body, header, nav, main, footer, h1, h2, h3, div, p, ul, li, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+body {
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rule for header */
+header {
+    background-color: #373684;
+    padding: 2%;
+    color: #fff;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color: #373684;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    border-top: 1px solid #e5e9fc;
+    font-size: 1.2em;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main p {
+    margin-bottom: 1em;
+}
+
+main ul {
+    margin-left: 2em;
+}
+
+.action {
+    color: #373684;
+    font-weight: bold;
+}
+
+#piano, #guitar, #violin {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+#info {
+    margin-bottom: 2em;
+}
+.lesson-descriptions {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.lesson-descriptions section {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.lesson-descriptions h2 {
+    color: #000;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
+
+.lesson-descriptions img {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 1em;
+}
+
+.lesson-descriptions p {
+    text-align: justify;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Style rules for contact content */
+.tel-link {
+    background-color: #373684;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tel-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+
+/* Hide tab-desk class */
+.tab-desk {
+    display: none;
+}
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    padding: 1em 2em;
+    background-color: #373684;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0.5em 0;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 550px), print {
+    /* Tablet Viewport: Show tab-desk class, hide mobile class */
+    .tab-desk {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    /* Tablet Viewport: Style rule for header content */
+    span.tab-desk {
+        display: inline;
+    }
+
+    /* Tablet Viewport: Style rules for nav area */
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1.5em;
+        border-right: 1px solid #e5e9fc;
+    }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    nav li a {
+        padding: 0.25em 0.5em;
+    }
+
+    /* Tablet Viewport: Style rule for map */
+    .map {
+        width: 500px;
+        height: 450px;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 769px) {
+    .lesson-descriptions {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2%;
+        padding: 2% 4%;
+    }
+
+    #piano, #guitar, #violin {
+        flex: 1;
+        margin: 0;
+        width: 31%;
+    }
+
+    .lesson-descriptions img {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .lesson-descriptions h2 {
+        font-size: 1.5em;
+    }
+
+    .lesson-descriptions p {
+        font-size: 0.9em;
+    }
+}
+
+
+/* Media Query for Print */
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+}
